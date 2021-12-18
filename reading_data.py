@@ -6,6 +6,7 @@ columns = df.columns
 print(columns)
 print(' ')   #Prints out an empty line to space the output 
 print(' ')
+
 #Reading data from a specific column
 name_column1 = df['Name']  #Gets all the items in the name column
 name_column2 = df.Name  #Gets all the items in the name column (This only works on columns with one word names)
@@ -46,6 +47,7 @@ print(name_column2)
 print(' ')
 print(name_column3)
 print(' ')
+
 #Reading data from multiple columns
 multicolumn = df[['Name', 'Type 1', 'HP']]
 print(multicolumn)
