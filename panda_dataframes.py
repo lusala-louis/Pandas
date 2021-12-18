@@ -6,7 +6,7 @@ data = {'Gender' : ['F', 'M', 'M'], 'Emp_ID' : [ 'E01', 'E02', 'E03'], 'Age' : [
 #Specify the order of the column and column parameters
 dataframe = pd.DataFrame(data,columns = ['Emp_ID', 'Gender', 'Age'])
 print(dataframe)
-print(' ')
+print(' ')  #Prints out an empty line to space the output better
 #Loading data(csv format) into the pandas library from a file
 df = pd.read_csv('pokemon_data.csv')
 print(df) #Loads in all the data
