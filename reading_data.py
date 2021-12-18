@@ -4,8 +4,8 @@ df = pd.read_csv('pokemon_data.txt', delimiter = '\t')
 #Getting all the column names
 columns = df.columns
 print(columns)
-print(' ')   #Prints out an empty line to space the output better
-
+print(' ')   #Prints out an empty line to space the output 
+print(' ')
 #Reading data from a specific column
 name_column1 = df['Name']  #Gets all the items in the name column
 name_column2 = df.Name  #Gets all the items in the name column (This only works on columns with one word names)
@@ -30,8 +30,7 @@ print(rows)
 print(' ')  
 row2_1 = df.iloc[2, 1]  #Gets the data from the third row the second column
 print(row2_1)
-print(' ')'''
-
+print(' ')
 #Iterating through rows
 for index, row in df.iterrows() :
     print(index, row)
@@ -40,4 +39,13 @@ print(' ')
 #Getting the location of specific items in the data
 location = df.loc[df['Type 1'] == 'Fire']
 print(location)
+print(' ')
+print(' ')
+print(name_column2)
+print(' ')
+print(name_column3)
+print(' ')
+#Reading data from multiple columns
+multicolumn = df[['Name', 'Type 1', 'HP']]
+print(multicolumn)
 print(' ')
