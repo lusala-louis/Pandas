@@ -40,6 +40,7 @@ print(' ')
 location = df.loc[df['Type 1'] == 'Fire']
 print(location)
 print(' ')
+print(name_column1)
 print(' ')
 print(name_column2)
 print(' ')
